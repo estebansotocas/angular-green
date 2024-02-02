@@ -1,0 +1,72 @@
+header{
+  display: flex;
+  gap: 10%;
+  justify-content: space-between;
+  width: calc( 100% - 50px);
+  padding: 15px 25px;
+  background-color: var(--white-color);
+  border-bottom: 1px solid --accent-color; 
+
+  .account-section{
+    display: flex;
+    align-items: center;
+    .icon{ 
+      max-width: 28px;
+      position: relative;
+      margin-left: 20px;
+      
+      .notification{
+        position: absolute;
+        display: inline-block;
+        background-color: var(--action-color);
+        color: var(--white-color);
+        text-align: center;
+        border-radius: 50%;
+        width: 16px;
+        height: 16px;
+        top: -4px;
+        right: -4px;
+        font-size: 12px;
+        line-height: 16px;
+      }
+    }
+    .avatar{ 
+      width: auto;
+      max-height: 36px;
+      margin-left: 30px;
+      margin-right: 10px;
+    }
+  }
+
+  form{
+    display: flex;
+    align-items: center;
+    flex-grow: 1; 
+    .form-img{
+      width: 16px;
+      height: auto;
+      margin-right: 10px;
+    }
+    input{
+      padding: 10px;
+      background-color: var(--white-color);
+      border: 0px;
+      font-size: 14px;
+      width: calc( 100% - 35px);
+      &:focus {
+        background-color: var(--primary-color);
+        border: var(--accent-color); ;
+      }
+    }
+  }
+}
+
+// Mobile styles
+@media screen and (max-width: 767px) {
+  // Styles specific to screens with a maximum width of 767px (typical mobile devices)
+  header{
+    form{
+      display: none;
+    }
+  }
+}

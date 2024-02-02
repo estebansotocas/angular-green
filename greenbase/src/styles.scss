@@ -1,0 +1,57 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'variables.scss';
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    font-size: var(--regular-font);
+}
+
+// Global styles
+h1{
+    color: var(--dark-color);
+    font-size: var(--principal-title);
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+h2{
+    color: var(--dark-color);
+    font-size: var(--second-title);
+    font-weight: 700;
+    margin-bottom: 25px;
+  }
+P{
+    font-size: var( --paragraph-font);
+}
+
+a{
+    text-decoration: none;
+    color: var(--accent-color);
+    transition: 0.8s;
+    cursor: pointer;
+    &.read-more{
+        color: var(--action-color);
+        border-bottom: 1px solid transparent;
+        &:hover{
+            border-bottom: 1px solid var(--action-color);
+        }
+    }
+}
+
+
+button{
+    background-color: var( --action-color );
+    color: var( --white-color );
+    padding: 10px 25px;
+    border-radius: 5px;
+    border: 0px;
+    margin: 20px auto;
+    cursor: pointer;
+    &:hover{
+        transition: 0.8s;
+        background-color: var( --dark-color );
+    }
+}
